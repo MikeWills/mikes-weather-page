@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta name="description" content=""> <meta name="author" content=""> 
 		<title>
-			Mike's Weather Page
+			Mike's Weather Page 
 		</title>
 <!-- Bootstrap core CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> 
@@ -12,8 +12,8 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-			<a class="navbar-brand" href="#">
-				Mike's Weather Page
+			<a class="navbar-brand" href="/">
+				Mike's Weather Page 
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon">
@@ -22,14 +22,14 @@
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="/">
 							Home 
 							<span class="sr-only">
-								(current)
+								(current) 
 							</span>
 						</a>
 					</li>
-					<!--- <li class="nav-item">
+<!--- <li class="nav-item">
 						<a class="nav-link" href="#">
 							Link
 						</a>
@@ -40,78 +40,170 @@
 						</a>
 					</li> -->
 				</ul>
-				<form class="form-inline mt-2 mt-md-0">
-					<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> 
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-						Search
-					</button>
-				</form>
 			</div>
 		</nav>
 		<div class="container">
 			<div class="jumbotron">
 				<h1>
-					Mike's Weather Page
+					Mike's Weather Page 
 				</h1>
 				<p class="lead">
-					These are images that are pulled from the National Weather Service's website. <a href="https://www.weather.gov/mpx/">Visit MPX</a>
+					These are images that are pulled from the National Weather Service's website. 
+					<a href="https://www.weather.gov/mpx/">
+						Visit MPX
+					</a>
 				</p>
 			</div>
 			<div class="row">
 				<div class="col">
-					<h2>Local Area</h2>
-					<p><img class="img-fluid" src="https://www.weather.gov/wwamap/png/mpx.png" alt="Weather map"/></p>
-					<p><a href="http://forecast.weather.gov/wwamap/wwatxtget.php?cwa=mpx&wwa=hazardous%20weather%20outlook">HWO</a></p>
-				</div>
-				<div class="col">
-					<h2>Local Radar</h2>
-					<p><a href="http://radar.weather.gov/lite/N0R/MPX_0.png"><img class="img-fluid" src="https://radar.weather.gov/lite/N0R/MPX_0.png" alt="Weather radar"/></a></p>
-				</div>
-				<div class="col">
-					<h2>SPC Overview</h2>
-					<p><a href="http://www.spc.noaa.gov/products/"><img class="img-fluid" src="http://www.spc.noaa.gov/products/activity_loop.gif" alt="Weather map - day 1"/></a></p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<h2>Weather Map - Day 1</h2>
-					<p><a href="http://www.wpc.ncep.noaa.gov/national_forecast/natfcst.php"><img class="img-fluid" src="http://www.wpc.ncep.noaa.gov/noaa/noaad1.gif" alt="Weather map - day 1"/></a></p>
-				</div>
-				<div class="col">
-					<h2>Weather Map - Day 2</h2>
-					<p><a href="http://www.wpc.ncep.noaa.gov/national_forecast/natfcst.php"><img class="img-fluid" src="http://www.wpc.ncep.noaa.gov/noaa/noaad2.gif" alt="Weather map - day 2"/></a></p>
-				</div>
-				<div class="col">
-					<h2>Weather Map - Day 3</h2>
-					<p><a href="http://www.wpc.ncep.noaa.gov/national_forecast/natfcst.php"><img class="img-fluid" src="http://www.wpc.ncep.noaa.gov/noaa/noaad3.gif" alt="Weather map - day 3"/></a></p>
+					<center>
+						<script>
+							// For todays date;
+							Date.prototype.today = function () { 
+							    return (((this.getMonth()+1) < 10)?"0":"") + (this.getMonth()+1) +"/"+ ((this.getDate() < 10)?"0":"") + this.getDate() +"/"+this.getFullYear();
+							}
+							
+							// For the time now
+							Date.prototype.timeNow = function () {
+							     return ((this.getHours() < 10)?"0":"") + this.getHours() +":"+ ((this.getMinutes() < 10)?"0":"") + this.getMinutes();
+							}
+							
+							document.write("Last Updated: " + new Date().today() + " @ " + new Date().timeNow());
+						</script>
+					</center>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<h2>Severe Weather Outlook - Today</h2>
-					<p><a href="http://www.spc.noaa.gov/products/outlook/day1otlk.html"><img class="img-fluid" src="http://www.spc.noaa.gov/products/outlook/day1otlk_0100.gif" alt="Weather map - day 1"/></a></p>
+					<h2>
+						Local Area
+					</h2>
+					<p>
+						<a href="https://www.weather.gov/mpx/">
+							<img class="img-fluid" src="https://www.weather.gov/wwamap/png/mpx.png" alt="Weather map" />
+						</a>
+					</p>
+					<p>
+						<a href="http://forecast.weather.gov/wwamap/wwatxtget.php?cwa=mpx&amp;wwa=hazardous%20weather%20outlook">
+							HWO
+						</a>
+					</p>
 				</div>
 				<div class="col">
-					<h2>Severe Weather Outlook - Day 2</h2>
-					<p><a href="http://www.spc.noaa.gov/products/outlook/day2otlk.html"><img class="img-fluid" src="http://www.spc.noaa.gov/products/outlook/day2otlk_1730.gif" alt="Weather map - day 2"/></a></p>
+					<h2>
+						Local Radar
+					</h2>
+					<p>
+						<a href="http://radar.weather.gov/lite/N0R/MPX_0.png">
+							<img class="img-fluid" src="https://radar.weather.gov/lite/N0R/MPX_0.png" alt="Weather radar" />
+						</a>
+					</p>
 				</div>
 				<div class="col">
-					<h2>Severe Weather Outlook - Day 3</h2>
-					<p><a href="http://www.spc.noaa.gov/products/outlook/day3otlk.html"><img class="img-fluid" src="http://www.spc.noaa.gov/products/outlook/day3otlk_0730.gif" alt="Weather map - day 3"/></a></p>
-				</div>
-				<div class="col">
-					<h2>Severe Weather Outlook - Day 4-8</h2>
-					<p><a href="http://www.spc.noaa.gov/products/exper/day4-8/"><img class="img-fluid" src="http://www.spc.noaa.gov/products/exper/day4-8/day48prob.gif" alt="Weather map - day 3"/></a></p>
+					<h2>
+						SPC Overview
+					</h2>
+					<p>
+						<a href="http://www.spc.noaa.gov/products/">
+							<img class="img-fluid" src="http://www.spc.noaa.gov/products/activity_loop.gif" alt="Weather map - day 1" />
+						</a>
+					</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<h2>Watches</h2>
-					<p><a href="http://www.spc.noaa.gov/products/watch/"><img class="img-fluid" src="http://www.spc.noaa.gov/products/watch/validww.png" alt="Weather map - day 2"/></a></p>
+					<h2>
+						Weather Map - Day 1
+					</h2>
+					<p>
+						<a href="http://www.wpc.ncep.noaa.gov/national_forecast/natfcst.php">
+							<img class="img-fluid" src="http://www.wpc.ncep.noaa.gov/noaa/noaad1.gif" alt="Weather map - day 1" />
+						</a>
+					</p>
 				</div>
 				<div class="col">
-					<h2>Storm Reports</h2>
-					<p><a href="http://www.spc.noaa.gov/climo/online/"><img class="img-fluid" src="http://www.spc.noaa.gov/climo/reports/today.gif" alt="Weather map - day 3"/></a></p>
+					<h2>
+						Weather Map - Day 2
+					</h2>
+					<p>
+						<a href="http://www.wpc.ncep.noaa.gov/national_forecast/natfcst.php">
+							<img class="img-fluid" src="http://www.wpc.ncep.noaa.gov/noaa/noaad2.gif" alt="Weather map - day 2" />
+						</a>
+					</p>
+				</div>
+				<div class="col">
+					<h2>
+						Weather Map - Day 3
+					</h2>
+					<p>
+						<a href="http://www.wpc.ncep.noaa.gov/national_forecast/natfcst.php">
+							<img class="img-fluid" src="http://www.wpc.ncep.noaa.gov/noaa/noaad3.gif" alt="Weather map - day 3" />
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<h2>
+						Severe Weather Outlook - Today
+					</h2>
+					<p>
+						<a href="http://www.spc.noaa.gov/products/outlook/day1otlk.html">
+							<img class="img-fluid" src="http://www.spc.noaa.gov/products/outlook/day1otlk.gif" alt="Weather map - day 1" />
+						</a>
+					</p>
+				</div>
+				<div class="col">
+					<h2>
+						Severe Weather Outlook - Day 2
+					</h2>
+					<p>
+						<a href="http://www.spc.noaa.gov/products/outlook/day2otlk.html">
+							<img class="img-fluid" src="http://www.spc.noaa.gov/products/outlook/day2otlk.gif" alt="Weather map - day 2" />
+						</a>
+					</p>
+				</div>
+				<div class="col">
+					<h2>
+						Severe Weather Outlook - Day 3
+					</h2>
+					<p>
+						<a href="http://www.spc.noaa.gov/products/outlook/day3otlk.html">
+							<img class="img-fluid" src="http://www.spc.noaa.gov/products/outlook/day3otlk.gif" alt="Weather map - day 3" />
+						</a>
+					</p>
+				</div>
+				<div class="col">
+					<h2>
+						Severe Weather Outlook - Day 4+
+					</h2>
+					<p>
+						<a href="http://www.spc.noaa.gov/products/exper/day4-8/">
+							<img class="img-fluid" src="http://www.spc.noaa.gov/products/exper/day4-8/day48prob.gif" alt="Weather map - day 3" />
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<h2>
+						Watches
+					</h2>
+					<p>
+						<a href="http://www.spc.noaa.gov/products/watch/">
+							<img class="img-fluid" src="http://www.spc.noaa.gov/products/watch/validww.png" alt="Weather map - day 2" />
+						</a>
+					</p>
+				</div>
+				<div class="col">
+					<h2>
+						Storm Reports
+					</h2>
+					<p>
+						<a href="http://www.spc.noaa.gov/climo/online/">
+							<img class="img-fluid" src="http://www.spc.noaa.gov/climo/reports/today.gif" alt="Weather map - day 3" />
+						</a>
+					</p>
 				</div>
 			</div>
 		</div>
