@@ -36,6 +36,9 @@
 						<a class="nav-link" href="/links.php">Links</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="/setup.php">Setup</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="http://www.spc.noaa.gov/" target="_blank">
 							Storm Prediction Center
 						</a>
