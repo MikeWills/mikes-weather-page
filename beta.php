@@ -16,6 +16,21 @@
 		</div>
 	</div>
 	<div class="row">
+		<div class="col" id="current-weather">
+			 
+		</div>
+	</div>
+	<div id="future-weather">
+	<div><h5 data-bind="text: locationName"></h5>
+	<div class="row" data-bind="foreach: weatherViewModel.periods.slice(0, 6)">
+		<div class="col-2">			
+			 <h6 data-bind="text: name"></h6>
+			 <img data-bind="attr: { src: icon }"/>
+			 <p data-bind="text: detailedForecast"></p>
+		</div>
+	</div>
+	</div>
+	<div class="row">
 		<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 			<h3>
 				Local Area 
@@ -168,48 +183,5 @@
 			</p>
 		</div>
 <?php include 'd_javascript.php' ?>
-<script>
-// For todays date;
-Date.prototype.today = function () { 
-	return (((this.getMonth()+1) < 10)?"0":"") + (this.getMonth()+1) +"/"+ ((this.getDate() < 10)?"0":"") + this.getDate() +"/"+this.getFullYear();
-}
-							
-// For the time now
-Date.prototype.timeNow = function () {
-	return ((this.getHours() < 10)?"0":"") + this.getHours() +":"+ ((this.getMinutes() < 10)?"0":"") + this.getMinutes();
-}
-
-var refreshViewModel = {
-    timestamp: new Date().today() + " @ " + new Date().timeNow()
-};
-
-ko.applyBindings(refreshViewModel, document.getElementById('refreshDateTime'))
-
-var weatherViewModel = {
-	office: "",
-	station: "",
-	gridX: 0,
-	gridY: 0,
-	radarStation: "",
-	currentForecast = new forecastPeriod(),
-	periods: ko.observableArray([])
-};
-
-var forecastPeriod = {
-	number: 0,
-	name: "",
-	startTime: "",
-    endTime: "",
-    isDaytime: false,
-    temperature: 0,
-    temperatureUnit: "F",
-    temperatureTrend: null,
-	windSpeed: "",
-    windDirection: "",
-    icon: "",
-    shortForecast: "",
-    detailedForecast: ""
-}
-
-</script>
+<script src="/js/index.js"></script>
 <?php include 'd_footer.php' ?>
