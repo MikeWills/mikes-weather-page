@@ -1,3 +1,9 @@
+$(document).ready(function() {
+	$('#li-nav-home').addClass('active');
+    var navText = $('#nav-home').text();
+    $('#nav-home').html(navText + ' <span class="sr-only">(current)</span>');
+});
+
 var coordinates = window.location.hash.substr(1);
 //console.log("Coordinates: " + coordinates);
 

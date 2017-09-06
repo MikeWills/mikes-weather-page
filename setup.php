@@ -27,6 +27,12 @@
 </div>
 <?php include 'd_javascript.php' ?>
 <script>
+	$(document).ready(function() {
+    	$('#li-nav-setup').addClass('active');
+    	var navText = $('#nav-setup').text();
+    	$('#nav-setup').html(navText + ' <span class="sr-only">(current)</span>');
+	});
+	
 	String.prototype.replaceAll = function (find, replace) {
 	    	var str = this;
 	    	return str.replace(new RegExp(find.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'), 'g'), replace);

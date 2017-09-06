@@ -19,17 +19,14 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+					<li class="nav-item" id="li-nav-home">
+						<a class="nav-link" href="/" id="nav-home">Home</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/hurricane.php">Hurricane</a>
+					<li class="nav-item" id="li-nav-hurricane">
+						<a class="nav-link" href="/hurricane.php" id="nav-hurricane">Hurricane</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/setup.php">Setup</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="http://www.spc.noaa.gov/" target="_blank">Storm Prediction Center</a>
+					<li class="nav-item" id="li-nav-setup">
+						<a class="nav-link" href="/setup.php" id="nav-setup">Setup</a>
 					</li>
 				</ul>
 			</div>
