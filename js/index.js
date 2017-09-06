@@ -13,17 +13,28 @@ if (coordinates == null || coordinates == ""){
 	} else {
 		// Do Nothing
 	}
-}
+};
 
 // For todays date;
 Date.prototype.today = function () { 
 	return (((this.getMonth()+1) < 10)?"0":"") + (this.getMonth()+1) +"/"+ ((this.getDate() < 10)?"0":"") + this.getDate() +"/"+this.getFullYear();
-}
+};
 							
 // For the time now
 Date.prototype.timeNow = function () {
 	return ((this.getHours() < 10)?"0":"") + this.getHours() +":"+ ((this.getMinutes() < 10)?"0":"") + this.getMinutes();
-}
+};
+
+ko.bindingHandlers.lineBreaks = {
+    init: function (element, valueAccessor, allBindings, data, context) {  
+	    var value = valueAccessor();
+        $(element).html(ko.unwrap(value).replace(/\n/g, '<br />'));
+    },
+    update: function (element, valueAccessor, allBindings, data, context) {
+    	var value = valueAccessor();
+        $(element).html(ko.unwrap(value).replace(/\n/g, '<br />'));
+    }
+};
 
 // ==================
 // Refresh DateTime View Model
@@ -121,17 +132,6 @@ var currentWeatherViewModel = {
     icon: "",
     shortForecast: "",
     detailedForecast: ""
-}
+};
 
 //ko.applyBindings(weatherViewModel, document.getElementById('current-weather'));
-
-ko.bindingHandlers.lineBreaks = {
-    init: function (element, valueAccessor, allBindings, data, context) {  
-	    var value = valueAccessor();
-        $(element).html(value.replace(/\n/g, '<br />'));
-    },
-    update: function (element, valueAccessor, allBindings, data, context) {
-    	var value = valueAccessor();
-        $(element).html(value.replace(/\n/g, '<br />'));
-    }
-};

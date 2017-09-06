@@ -14,7 +14,7 @@
 				</div>
 			</div>
 	<div class="row">
-		<div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
 			<div id="weather-alerts">
 				<div class="row">
 					<div data-bind="foreach: alertsViewModel.features">
@@ -32,7 +32,6 @@
 					<div class="alert alert-warning" role="alert">
 						<p><strong><a class="alert-link" target="_blank" data-bind="attr: {href : alertsViewModel.hwoUrl }">Hazardous Weather Outlook</a></strong></p>
 						<p data-bind="lineBreaks: alertsViewModel.hwoText"></p>
-						<p data-bind="text: alertsViewModel.hwoText"></p>
 					</div>
 				</div>
 			</div>
@@ -179,7 +178,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
 			<h3>Links</h3>
 			<ul class="list-unstyled">
 				<li><a href="http://www.weather.gov/" target="_blank">National Weather Service</a></li>
