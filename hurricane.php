@@ -20,6 +20,7 @@
 		<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
 			<h3>Links</h3>
 			<ul class="list-unstyled">
+				<li><a href="http://www.nhc.noaa.gov/" target="_blank">National Hurricane Center</a></li>
 				<li><a href="http://www.weather.gov/" target="_blank">National Weather Service</a></li>
 				<li><a href="http://mobile.weather.gov/" target="_blank">Mobile NWS</a></li>
 				<li><a href="http://www.spc.noaa.gov/" target="_blank">Storm Prediction Center</a></li>
