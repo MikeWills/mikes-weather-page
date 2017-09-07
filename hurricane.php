@@ -24,6 +24,11 @@
 				<li><a href="http://www.weather.gov/" target="_blank">National Weather Service</a></li>
 				<li><a href="http://mobile.weather.gov/" target="_blank">Mobile NWS</a></li>
 				<li><a href="http://www.spc.noaa.gov/" target="_blank">Storm Prediction Center</a></li>
+				<li><a href="http://www.spaghettimodels.com/" target="_blank">Mike's Weather Page</a>
+				<li><a href="http://weathernerds.org/" target="_blank">Weather Nerds</a>
+				<li><a href="https://www.tropicaltidbits.com/analysis/models/" target="_blank">Tropical Tidbits</a>
+				<li><a href="http://www.spaghettimodels.com/" target="_blank">Mike's Weather Page</a>
+				
 			</ul>
 		</div>
 	</div>
