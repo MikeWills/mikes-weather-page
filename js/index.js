@@ -2,6 +2,21 @@ $(document).ready(function() {
 	$('#li-nav-home').addClass('active');
     var navText = $('#nav-home').text();
     $('#nav-home').html(navText + ' <span class="sr-only">(current)</span>');
+    
+    $('#hwo').hide();
+    
+    $('#showHwo').click(function(){
+    	$('#hwo').toggle('slow',function(){
+    		if ($('#showHwo').text() == "Show")
+    		{
+    			$('#showHwo').text("Hide");
+    		} 
+    		else 
+    		{
+    			$('#showHwo').text("Show");
+    		}
+    	});
+    });
 });
 
 var coordinates = window.location.hash.substr(1);
@@ -110,6 +125,9 @@ var alertsViewModel = {
 	features: ko.observableArray([]),
 	hwoUrl: ko.observable(""),
 	hwoText: ko.observable("")
+	//hideAlert: function(features){
+	//	
+	//}
 };
 
 ko.applyBindings(weatherViewModel, document.getElementById('weather-alerts'));

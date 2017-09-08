@@ -21,17 +21,24 @@
 						<div class="col-12">
 							<div class="alert alert-danger" role="alert">
 								<p><strong data-bind="text: properties.headline"></strong></p>
-								<p data-bind="lineBreaks: properties.description"></p>
-								<p><strong>Instructions</strong></p>
-								<p data-bind="lineBreaks: properties.instruction"></p>
+								<!--<div data-bind="">-->
+									<p data-bind="lineBreaks: properties.description"></p>
+									<p><strong>Instructions</strong></p>
+									<p data-bind="lineBreaks: properties.instruction"></p>
+								<!--</div>-->
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-12">
 					<div class="alert alert-warning" role="alert">
-						<p><strong><a class="alert-link" target="_blank" data-bind="attr: {href : alertsViewModel.hwoUrl }">Hazardous Weather Outlook</a></strong></p>
-						<p data-bind="lineBreaks: alertsViewModel.hwoText"></p>
+						<p>
+							<strong><a class="alert-link" target="_blank" data-bind="attr: {href : alertsViewModel.hwoUrl }">Hazardous Weather Outlook</a></strong>
+							<button type="button" class="btn btn-link" id="showHwo">Show</button>
+						</p>
+						<div id="hwo">
+							<p data-bind="lineBreaks: alertsViewModel.hwoText"></p>
+						</div>
 					</div>
 				</div>
 			</div>

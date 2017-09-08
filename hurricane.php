@@ -27,7 +27,6 @@
 				<li><a href="http://www.spaghettimodels.com/" target="_blank">Mike's Weather Page</a>
 				<li><a href="http://weathernerds.org/" target="_blank">Weather Nerds</a>
 				<li><a href="https://www.tropicaltidbits.com/analysis/models/" target="_blank">Tropical Tidbits</a>
-				<li><a href="http://www.spaghettimodels.com/" target="_blank">Mike's Weather Page</a>
 				
 			</ul>
 		</div>
