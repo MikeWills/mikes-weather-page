@@ -127,8 +127,8 @@ var alertsViewModel = {
 	features: ko.observableArray([]),
 	hwoUrl: ko.observable(""),
 	hwoText: ko.observable(""),
-	showHideAlert: function(alertId){
-		alert(alertId);
+	showHideAlert: function(data, event){
+		alert('you clicked');
 		/*$('#hwo').toggle('slow',function(){
     		if ($('#showHwo').text() == "Show")
     		{
