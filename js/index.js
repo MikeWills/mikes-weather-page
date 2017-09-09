@@ -98,10 +98,11 @@ $.get('https://api.weather.gov/points/' + coordinates, function(json) {
 		weatherViewModel.periods(forecastJson.properties.periods);
 	});
 	
-	$.get(json.properties.county, function(countyJson){
+	$.get(json.properties.forecastZone, function(countyJson){
 		var zone = countyJson.properties.id;
 		
 		$.get("https://api.weather.gov/alerts?active=1&zone=" + zone, function(alertsJson){
+			//console.log(JSON.stringify(alertsJson));
 			alertsViewModel.features(alertsJson.features);
 		});
 		
@@ -122,12 +123,23 @@ ko.applyBindings(weatherViewModel, document.getElementById('future-weather'));
 // Current Weather View Model
 // ==================
 var alertsViewModel = {
+
 	features: ko.observableArray([]),
 	hwoUrl: ko.observable(""),
-	hwoText: ko.observable("")
-	//hideAlert: function(features){
-	//	
-	//}
+	hwoText: ko.observable(""),
+	showHideAlert: function(alertId){
+		alert(alertId);
+		/*$('#hwo').toggle('slow',function(){
+    		if ($('#showHwo').text() == "Show")
+    		{
+    			$('#showHwo').text("Hide");
+    		} 
+    		else 
+    		{
+    			$('#showHwo').text("Show");
+    		}
+    	});*/
+	}
 };
 
 ko.applyBindings(weatherViewModel, document.getElementById('weather-alerts'));

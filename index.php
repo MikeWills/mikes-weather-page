@@ -20,12 +20,15 @@
 					<div data-bind="foreach: alertsViewModel.features">
 						<div class="col-12">
 							<div class="alert alert-danger" role="alert">
-								<p><strong data-bind="text: properties.headline"></strong></p>
-								<!--<div data-bind="">-->
+								<p>
+									<strong data-bind="text: properties.headline"></strong>
+ 									<button type="button" class="btn btn-link" data-bind="click: function() { $root.showHideAlert(properties.id); }">Show</button>
+ 								</p>
+								<div data-bind="attr: {id: properties.id}" style="display: none;">
 									<p data-bind="lineBreaks: properties.description"></p>
 									<p><strong>Instructions</strong></p>
 									<p data-bind="lineBreaks: properties.instruction"></p>
-								<!--</div>-->
+								</div>
 							</div>
 						</div>
 					</div>
