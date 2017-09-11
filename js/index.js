@@ -120,7 +120,7 @@ ko.applyBindings(weatherViewModel, document.getElementById('future-weather'));
 
 
 // ==================
-// Current Weather View Model
+// Alerts View Model
 // ==================
 var alertsViewModel = {
 
@@ -128,21 +128,21 @@ var alertsViewModel = {
 	hwoUrl: ko.observable(""),
 	hwoText: ko.observable(""),
 	showHideAlert: function(data, event){
-		alert('you clicked');
-		/*$('#hwo').toggle('slow',function(){
-    		if ($('#showHwo').text() == "Show")
+		//alert('you clicked: ' + data.properties.id);
+		$('#' + data.properties.id).toggle('slow',function(){
+    		if ($('#button-' + data.properties.id).text() == "Show")
     		{
-    			$('#showHwo').text("Hide");
+    			$('#button-' + data.properties.id).text("Hide");
     		} 
     		else 
     		{
-    			$('#showHwo').text("Show");
+    			$('#button-' + data.properties.id).text("Show");
     		}
-    	});*/
+    	});
 	}
 };
 
-ko.applyBindings(weatherViewModel, document.getElementById('weather-alerts'));
+ko.applyBindings(alertsViewModel, document.getElementById('weather-alerts'));
 
 
 // ==================

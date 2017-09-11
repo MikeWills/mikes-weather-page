@@ -22,7 +22,7 @@
 							<div class="alert alert-danger" role="alert">
 								<p>
 									<strong data-bind="text: properties.headline"></strong>
- 									<button type="button" class="btn btn-link" data-bind="click: $parent.showHideAlert">Show</button>
+ 									<button type="button" class="btn btn-link" data-bind="click: $root.showHideAlert, attr: {id: 'button-' + properties.id}">Show</button>
  								</p>
 								<div data-bind="attr: {id: properties.id}" style="display: none;">
 									<p data-bind="lineBreaks: properties.description"></p>
@@ -33,16 +33,18 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12">
-					<div class="alert alert-warning" role="alert">
-						<p>
-							<strong><a class="alert-link" target="_blank" data-bind="attr: {href : alertsViewModel.hwoUrl }">Hazardous Weather Outlook</a></strong>
-							<button type="button" class="btn btn-link" id="showHwo">Show</button>
-						</p>
-						<div id="hwo">
-							<p data-bind="lineBreaks: alertsViewModel.hwoText"></p>
+				<div class="row">
+					<div class="col-12">
+						<div class="alert alert-warning" role="alert">
+							<p>
+								<strong><a class="alert-link" target="_blank" data-bind="attr: {href : alertsViewModel.hwoUrl }">Hazardous Weather Outlook</a></strong>
+								<button type="button" class="btn btn-link" id="showHwo">Show</button>
+							</p>
+							<div id="hwo">
+								<p data-bind="lineBreaks: alertsViewModel.hwoText"></p>
+							</div>
 						</div>
-					</div>
+					</div>	
 				</div>
 			</div>
 			<div class="row">
