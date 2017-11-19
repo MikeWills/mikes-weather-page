@@ -101,7 +101,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 						<h4>SPC Overview</h4>
 						<p>
 							<a href="http://www.spc.noaa.gov/products/" target="_blank">
@@ -109,7 +109,9 @@
 							</a>
 						</p>
 					</div>
-					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+				</div>
+				<div class="row">
+					<div class="ol-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
 						<h4>Severe Weather Outlook - Today</h4>
 						<p>
 							<a href="http://www.spc.noaa.gov/products/outlook/day1otlk.html" target="_blank">
@@ -117,8 +119,6 @@
 							</a>
 						</p>
 					</div>
-				</div>
-				<div class="row">
 					<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
 						<h5>Severe Weather Outlook - Day 2</h5>
 						<p>
