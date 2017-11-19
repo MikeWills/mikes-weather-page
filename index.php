@@ -111,15 +111,15 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="ol-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
-						<h4>Severe Weather Outlook - Today</h4>
+					<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+						<h5>Severe Weather Outlook - Today</h5>
 						<p>
 							<a href="http://www.spc.noaa.gov/products/outlook/day1otlk.html" target="_blank">
 								<img class="img-fluid" src="http://www.spc.noaa.gov/products/outlook/day1otlk.gif" alt="Weather map - day 1" /> 
 							</a>
 						</p>
 					</div>
-					<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+					<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
 						<h5>Severe Weather Outlook - Day 2</h5>
 						<p>
 							<a href="http://www.spc.noaa.gov/products/outlook/day2otlk.html" target="_blank">
@@ -127,7 +127,7 @@
 							</a>
 						</p>
 					</div>
-					<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+					<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
 						<h5>Severe Weather Outlook - Day 3</h5>
 						<p>
 							<a href="http://www.spc.noaa.gov/products/outlook/day3otlk.html" target="_blank">
@@ -135,7 +135,7 @@
 							</a>
 						</p>
 					</div>
-					<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+					<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
 						<h5>Severe Weather Outlook - Day 4+</h5>
 						<p>
 							<a href="http://www.spc.noaa.gov/products/exper/day4-8/" target="_blank">
