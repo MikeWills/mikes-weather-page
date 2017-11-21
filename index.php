@@ -197,6 +197,11 @@
 				<li><a href="http://mobile.weather.gov/" target="_blank">Mobile NWS</a></li>
 				<li><a href="http://www.spc.noaa.gov/" target="_blank">Storm Prediction Center</a></li>
 			</ul>
+			<h3>Learning Resources</h3>
+			<ul class="list-unstyled">
+				<li><a href="https://www.improvenet.com/a/become-a-storm-spotter-from-home" target="_blank">Become A Storm Spotter From Home</a></li>
+				<li><a href="http://www.weatherwizkids.com/" target="_blank">Weather Wiz Kids</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
