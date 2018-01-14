@@ -1,5 +1,5 @@
 <?php include 'd_header.php' ?>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-12">
             <ul class="nav nav-tabs" role="tablist">
@@ -41,30 +41,6 @@
 </div>
 <?php include 'd_javascript.php' ?>
 <script type="text/javascript">
-    function windowDimensions() { // prototype/jQuery compatible
-        var myWidth = 0,
-            myHeight = 0;
-        if (typeof (window.innerWidth) == 'number') {
-            //Non-IE or IE 9+ non-quirks
-            myWidth = window.innerWidth;
-            myHeight = window.innerHeight;
-        } else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
-            //IE 6+ in 'standards compliant mode'
-            myWidth = document.documentElement.clientWidth;
-            myHeight = document.documentElement.clientHeight;
-        } else if (document.body && (document.body.clientWidth || document.body.clientHeight)) {
-            //IE 5- (lol) compatible
-            myWidth = document.body.clientWidth;
-            myHeight = document.body.clientHeight;
-        }
-        if (myWidth < 1) myWidth = screen.width; // emergency fallback to prevent division by zero
-        if (myHeight < 1) myHeight = screen.height;
-        return [myWidth, myHeight];
-    }
-    var dim = windowDimensions();
-    myIframe = $('.iframe'); // changed the code to use jQuery
-    myIframe.height((dim[1] - 200) + "px");
-
     window.setInterval(function () {
         reloadIFrame()
     }, 1800000); // 30 minutes
